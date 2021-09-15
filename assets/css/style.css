@@ -1,0 +1,93 @@
+/* your styles go here */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    position: fixed;
+    background-color: burlywood;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+section {
+    padding-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 25%;
+    padding: 25px;
+    margin: 12px;
+}
+
+article h2 {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+article p {
+    font-size: 16px;
+}
+
+.article-1 {
+    width: 50%;
+}
+
+button {
+    background-color: white;
+    border: none;
+    margin-top: 8px;
+}
+
+button a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+}
+
+button a:hover {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+
+
+/* media queries for page resizing */
+
+@media screen and (max-width: 992px) {
+    .article-1 {
+        width: 66%;
+    }
+
+    article {
+        width: 33%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .article-1 {
+        width: 100%;
+    }
+
+    article {
+        width: 50%;
+    }
+    
+}
